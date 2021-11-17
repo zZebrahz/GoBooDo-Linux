@@ -82,10 +82,11 @@ class  GoBooDo:
         print(f'Downloading {self.name[:-15]}')
         if self.found == False:
             scripts = (soup.findAll('script'))
-            try:
-                stringResponse = ("["+scripts[6].text.split("_OC_Run")[1][1:-2]+"]")
-            except:
-                stringResponse = ("["+scripts[-4].text.split("_OC_Run")[1][1:-2]+"]")
+            target = "_OC_Run"           
+            index = [i for i, content in enumerate(scripts) if '_OC_Run' in str(content)]
+            index = index[0]
+            stringResponse = f"[{str(scripts[index]).split('_OC_Run')[1][1:].strip(');</script>')}]"
+
             jsonResponse = json.loads(stringResponse)
             self.createPageDict(jsonResponse)
             print(f'Pages to be fetched in the current iteration are : {len(self.pageList)}')

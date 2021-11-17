@@ -65,7 +65,10 @@ class StoreImages:
         except:
             pytesseract.pytesseract.tesseract_cmd = self.tesserPath
             text = pytesseract.image_to_string(bw)
-        return text.strip().replace('\n', " ") == 'image not available'
+        if text.find("image") == -1:
+            return False
+        else:
+            return True
 
 
     def getImages(self,retries):

@@ -14,7 +14,7 @@
 
 GoBooDo is a **python3** program for downloading **previewable** books on Google books. It downloads high resolution images of pages and combines them to save the file as a PDF. This fork contains fixes for few of the issues stated in the issues page of the original GoBooDo page and is customized for linux usage, assuming tesseract was installed using apt-get and is stored in /usr/bin/tesseract.
 ~~~
-This page will soon have updated python files with the fixes :-)
+All python files have been updated with fixes and tested. Please report in "issues" if there are any!
 ~~~
 # Usage
 For downloading a book GoBooDo requires the book id which can be fetched from the url of the book. For instance consider the example below:

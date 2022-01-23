@@ -13,7 +13,7 @@ from time import sleep
 here = os.path.dirname(os.path.abspath(__file__))
 
 filename = os.path.join(here, 'settings.json')
-print(filename)
+
 #suppress urllib3 warning
 
 import urllib3

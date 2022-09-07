@@ -49,7 +49,7 @@ The configuration can be done in the settings.json and the description is as fol
 The output will be saved as a folder named the 'id' of the book which was given as input. The final PDF will be in the output folder inside it along with a folder containing the images.
 Proxies may be added in proxies.txt (a sample proxy has been added already).
 
-GooBoDo now uses Tesseract for identifying empty images fetched from valid links. Please configure Tesseract prior to avoid any errors related to it. The path in settings is used for Windows installation. Please configure Tesseract for a linux distribution accordingly.
+GooBoDo now uses Tesseract for identifying empty images fetched from valid links. Please configure Tesseract prior to avoid any errors related to it. The path in settings is used for Linux installation. Please configure Tesseract for a windows installation accordingly.
 
 The breakup of the files downloaded is as follows:
 ~~~

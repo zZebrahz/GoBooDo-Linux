@@ -1,7 +1,5 @@
 # GoBooDo
 ### A google books downloader with proxy support.
-### ps: This repo is still maintained. not dormant.
-
 
      .88888.            888888ba                    888888ba           
     d8'   `88           88    `8b                   88    `8b          

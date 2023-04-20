@@ -35,7 +35,7 @@ class  GoBooDo:
         self.lastCheckedPage = ""
         self.obstinatePages = []
         self.path = os.path.join(os.getcwd(),id)
-        self.dataPath = os.path.join(self.path,'data')
+        self.dataPath = os.path.join("/books",'data')
         self.found = False
         if os.path.isdir(self.dataPath):
             self.found = True
